@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cm to Inches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overAllWidget">
+        <div class="widgets">
+            <h1>Cm to Inch convertor</h1>
+            <br>
+            <div class="d1" >
+                <input id="input" type="text" placeholder="Enter number">
+            </div> <br>
+            <div class="d2">
+                <button id="btn" type="submit" onclick="convert()">Click to convert</button>
+            </div> <br>
+            <div id="result">
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+         function convert(){
+         let value = Number(document.getElementById("input").value)
+         let cnt = value/2.54
+         let endvalue = document.getElementById("result")
+         endvalue.innerHTML = cnt
+         }
+    </script>
+</body>
+</html>
